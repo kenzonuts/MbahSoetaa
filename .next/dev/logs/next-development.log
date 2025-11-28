@@ -1,0 +1,2124 @@
+[00:00:00.737] Server  LOG      ✓ Ready in 504ms
+[00:00:03.602] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:03.742] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:03.742] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:03.742] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764347808550}
+[00:00:05.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.775] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:05.775] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:05.775] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764347810583}
+[00:00:07.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:07.451] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:07.451] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:07.451] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764347812259}
+[00:00:18.084] Browser LOG     Starting order submission...
+[00:00:18.084] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"ken","noWhatsapp":"","sizes":{"L":0,"M":0,"S":1,"XL":0,"XXL":0,"XXXL":0},"totalItems":1}
+[00:00:18.084] Browser LOG     Checking existing orders for: ken
+[00:00:18.473] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:00:18.473] Browser LOG     Inserting order...
+[00:00:18.473] Browser LOG     Order data to insert: {"alamat":null,"catatan":null,"nama_lengkap":"ken","no_whatsapp":null}
+[00:00:19.952] Browser LOG     Order insert result: {"order":null,"orderError":{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}}
+[00:00:19.952] Browser ERROR   Error submitting order: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}
+[00:00:19.952] Browser ERROR   Error details: {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'alamat' column of 'orders' in the schema cache"
+}
+[00:00:29.478] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:29.618] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:29.618] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:29.618] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764347834427}
+[00:00:34.045] Browser LOG     Starting order submission...
+[00:00:34.045] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"ken","noWhatsapp":"","sizes":{"L":0,"M":0,"S":0,"XL":1,"XXL":0,"XXXL":0},"totalItems":1}
+[00:00:34.045] Browser LOG     Checking existing orders for: ken
+[00:00:34.382] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:00:34.382] Browser LOG     Inserting order...
+[00:00:34.382] Browser LOG     Order data to insert: {"alamat":null,"catatan":null,"nama_lengkap":"ken","no_whatsapp":null}
+[00:00:36.366] Browser LOG     Order insert result: {"order":null,"orderError":{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}}
+[00:00:36.366] Browser ERROR   Error submitting order: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}
+[00:00:36.366] Browser ERROR   Error details: {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'alamat' column of 'orders' in the schema cache"
+}
+[00:02:05.416] Server  LOG      ✓ Compiled in 68ms
+[00:02:05.612] Browser ERROR   ./components/order-form.tsx:128:3
+Parsing ecmascript source code failed
+  126 |       setIsSubmitting(false)
+  127 |     }
+> 128 |   }
+      |   ^
+  129 |
+  130 |   if (isSuccess) {
+  131 |     return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:02:05.756] Server  LOG      ✓ Compiled in 23ms
+[00:02:05.790] Server  LOG      ✓ Compiled in 21ms
+[00:02:05.901] Server  LOG      ✓ Compiled in 30ms
+[00:02:12.379] Server  LOG      ✓ Compiled in 23ms
+[00:02:12.432] Server  LOG      ✓ Compiled in 20ms
+[00:02:12.492] Server  LOG      ✓ Compiled in 23ms
+[00:02:12.548] Server  LOG      ✓ Compiled in 25ms
+[00:02:12.608] Server  LOG      ✓ Compiled in 23ms
+[00:02:12.743] Browser ERROR   ./components/order-form.tsx:292:7
+Parsing ecmascript source code failed
+  290 |
+  291 |       onSuccess()
+> 292 |     } catch (error) {
+      |       ^^^^^
+  293 |       console.error("Error updating order:", error)
+  294 |       alert("Gagal mengupdate pesanan. Silakan coba lagi.")
+  295 |     } finally {
+
+Expected ',', got 'catch'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:02:12.743] Browser ERROR   ./components/order-form.tsx:294:7
+Parsing ecmascript source code failed
+  292 |
+  293 |       onSuccess()
+> 294 |     } catch (error) {
+      |       ^^^^^
+  295 |       console.error("Error updating order:", error)
+  296 |       alert("Gagal mengupdate pesanan. Silakan coba lagi.")
+  297 |     } finally {
+
+Expected ',', got 'catch'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:02:12.757] Server  LOG      ✓ Compiled in 26ms
+[00:02:12.871] Server  LOG      ✓ Compiled in 18ms
+[00:02:12.954] Server  LOG      ✓ Compiled in 31ms
+[00:02:57.223] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:02:57.359] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:02:57.359] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:02:57.359] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764347982168}
+[00:03:01.527] Browser LOG     Starting order submission...
+[00:03:01.527] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"ken","noWhatsapp":"","sizes":{"L":0,"M":0,"S":0,"XL":0,"XXL":1,"XXXL":0},"totalItems":1}
+[00:03:01.527] Browser LOG     Checking existing orders for: ken
+[00:03:02.522] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:03:02.522] Browser LOG     Inserting order...
+[00:03:02.522] Browser LOG     Order data to insert: {"alamat":null,"catatan":null,"nama_lengkap":"ken","no_whatsapp":null}
+[00:03:03.859] Browser LOG     Order insert result: {"order":null,"orderError":{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}}
+[00:03:03.859] Browser ERROR   Error submitting order: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}
+[00:03:03.859] Browser ERROR   Error type: object
+[00:03:03.859] Browser ERROR   Error message: Could not find the 'alamat' column of 'orders' in the schema cache
+[00:03:03.859] Browser ERROR   Error details: No details
+[00:03:03.859] Browser ERROR   Error hint: No hint
+[00:03:03.859] Browser ERROR   Error code: PGRST204
+[00:03:03.859] Browser ERROR   Full error object: {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'alamat' column of 'orders' in the schema cache"
+}
+[00:03:36.475] Server  LOG        Reload env: .env.local
+[00:03:36.501] Server  LOG        Reload env: .env.local
+[00:03:36.738] Server  LOG        Reload env: .env.local
+[00:03:37.314] Server  LOG      ✓ Compiled in 0ms
+[00:04:30.526] Server  LOG      ✓ Compiled in 22ms
+[00:04:30.724] Browser ERROR   ./components/order-form.tsx:185:1
+Parsing ecmascript source code failed
+  183 |     </form>
+  184 |   )
+> 185 | }
+      | ^
+  186 |
+  187 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  188 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:30.724] Browser ERROR   ./components/order-form.tsx:186:1
+Parsing ecmascript source code failed
+  184 |     </form>
+  185 |   )
+> 186 | }
+      | ^
+  187 |
+  188 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  189 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:30.785] Server  LOG      ✓ Compiled in 30ms
+[00:04:30.844] Server  LOG      ✓ Compiled in 19ms
+[00:04:31.058] Server  LOG      ✓ Compiled in 20ms
+[00:04:31.352] Server  LOG      ✓ Compiled in 31ms
+[00:04:31.679] Server  LOG      ✓ Compiled in 51ms
+[00:04:31.773] Server  LOG      ✓ Compiled in 30ms
+[00:04:31.959] Server  LOG      ✓ Compiled in 18ms
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:190:1
+Parsing ecmascript source code failed
+  188 |     </form>
+  189 |   )
+> 190 | }
+      | ^
+  191 |
+  192 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  193 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:192:1
+Parsing ecmascript source code failed
+  190 |     </form>
+  191 |   )
+> 192 | }
+      | ^
+  193 |
+  194 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  195 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:193:1
+Parsing ecmascript source code failed
+  191 |     </form>
+  192 |   )
+> 193 | }
+      | ^
+  194 |
+  195 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  196 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:195:1
+Parsing ecmascript source code failed
+  193 |     </form>
+  194 |   )
+> 195 | }
+      | ^
+  196 |
+  197 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  198 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:195:5
+Parsing ecmascript source code failed
+  193 |             </Label>
+  194 |             <Input
+> 195 |     </form>
+      |     ^
+  196 |   )
+  197 | }
+  198 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:195:6
+Parsing ecmascript source code failed
+  193 |             </Label>
+  194 |             <Input
+> 195 |     </form>
+      |      ^^^^^^
+  196 |   )
+  197 | }
+  198 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:196:5
+Parsing ecmascript source code failed
+  194 |             <Input
+  195 |               id="nama"
+> 196 |     </form>
+      |     ^
+  197 |   )
+  198 | }
+  199 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:196:6
+Parsing ecmascript source code failed
+  194 |             <Input
+  195 |               id="nama"
+> 196 |     </form>
+      |      ^^^^^^
+  197 |   )
+  198 | }
+  199 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:198:5
+Parsing ecmascript source code failed
+  196 |               value={namaLengkap}
+  197 |               onChange={(e) => setNamaLengkap(e.target.value)}
+> 198 |     </form>
+      |     ^
+  199 |   )
+  200 | }
+  201 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:198:6
+Parsing ecmascript source code failed
+  196 |               value={namaLengkap}
+  197 |               onChange={(e) => setNamaLengkap(e.target.value)}
+> 198 |     </form>
+      |      ^^^^^^
+  199 |   )
+  200 | }
+  201 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:200:5
+Parsing ecmascript source code failed
+  198 |               placeholder="Masukkan nama lengkap"
+  199 |               required
+> 200 |     </form>
+      |     ^
+  201 |   )
+  202 | }
+  203 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:200:6
+Parsing ecmascript source code failed
+  198 |               placeholder="Masukkan nama lengkap"
+  199 |               required
+> 200 |     </form>
+      |      ^^^^^^
+  201 |   )
+  202 | }
+  203 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:204:1
+Parsing ecmascript source code failed
+  202 |     </form>
+  203 |   )
+> 204 | }
+      | ^
+  205 |
+  206 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  207 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:205:1
+Parsing ecmascript source code failed
+  203 |     </form>
+  204 |   )
+> 205 | }
+      | ^
+  206 |
+  207 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  208 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:207:1
+Parsing ecmascript source code failed
+  205 |     </form>
+  206 |   )
+> 207 | }
+      | ^
+  208 |
+  209 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  210 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:209:1
+Parsing ecmascript source code failed
+  207 |     </form>
+  208 |   )
+> 209 | }
+      | ^
+  210 |
+  211 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  212 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:211:5
+Parsing ecmascript source code failed
+  209 |               id="noWhatsapp"
+  210 |               value={noWhatsapp}
+> 211 |     </form>
+      |     ^
+  212 |   )
+  213 | }
+  214 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:211:6
+Parsing ecmascript source code failed
+  209 |               id="noWhatsapp"
+  210 |               value={noWhatsapp}
+> 211 |     </form>
+      |      ^^^^^^
+  212 |   )
+  213 | }
+  214 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:213:5
+Parsing ecmascript source code failed
+  211 |               onChange={(e) => setNoWhatsapp(e.target.value)}
+  212 |               placeholder="Masukkan nomor WhatsApp"
+> 213 |     </form>
+      |     ^
+  214 |   )
+  215 | }
+  216 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:213:6
+Parsing ecmascript source code failed
+  211 |               onChange={(e) => setNoWhatsapp(e.target.value)}
+  212 |               placeholder="Masukkan nomor WhatsApp"
+> 213 |     </form>
+      |      ^^^^^^
+  214 |   )
+  215 | }
+  216 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:217:1
+Parsing ecmascript source code failed
+  215 |     </form>
+  216 |   )
+> 217 | }
+      | ^
+  218 |
+  219 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  220 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:218:1
+Parsing ecmascript source code failed
+  216 |     </form>
+  217 |   )
+> 218 | }
+      | ^
+  219 |
+  220 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  221 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:220:1
+Parsing ecmascript source code failed
+  218 |     </form>
+  219 |   )
+> 220 | }
+      | ^
+  221 |
+  222 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  223 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:222:1
+Parsing ecmascript source code failed
+  220 |     </form>
+  221 |   )
+> 222 | }
+      | ^
+  223 |
+  224 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  225 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:222:5
+Parsing ecmascript source code failed
+  220 |             </Label>
+  221 |             <Textarea
+> 222 |     </form>
+      |     ^
+  223 |   )
+  224 | }
+  225 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:222:6
+Parsing ecmascript source code failed
+  220 |             </Label>
+  221 |             <Textarea
+> 222 |     </form>
+      |      ^^^^^^
+  223 |   )
+  224 | }
+  225 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:223:5
+Parsing ecmascript source code failed
+  221 |             <Textarea
+  222 |               id="alamat"
+> 223 |     </form>
+      |     ^
+  224 |   )
+  225 | }
+  226 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:223:6
+Parsing ecmascript source code failed
+  221 |             <Textarea
+  222 |               id="alamat"
+> 223 |     </form>
+      |      ^^^^^^
+  224 |   )
+  225 | }
+  226 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:226:5
+Parsing ecmascript source code failed
+  224 |               onChange={(e) => setAlamat(e.target.value)}
+  225 |               placeholder="Masukkan alamat lengkap"
+> 226 |     </form>
+      |     ^
+  227 |   )
+  228 | }
+  229 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.153] Browser ERROR   ./components/order-form.tsx:226:6
+Parsing ecmascript source code failed
+  224 |               onChange={(e) => setAlamat(e.target.value)}
+  225 |               placeholder="Masukkan alamat lengkap"
+> 226 |     </form>
+      |      ^^^^^^
+  227 |   )
+  228 | }
+  229 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.326] Browser ERROR   ./components/order-form.tsx:227:5
+Parsing ecmascript source code failed
+  225 |               placeholder="Masukkan alamat lengkap"
+  226 |               rows={2}
+> 227 |     </form>
+      |     ^
+  228 |   )
+  229 | }
+  230 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.326] Browser ERROR   ./components/order-form.tsx:227:6
+Parsing ecmascript source code failed
+  225 |               placeholder="Masukkan alamat lengkap"
+  226 |               rows={2}
+> 227 |     </form>
+      |      ^^^^^^
+  228 |   )
+  229 | }
+  230 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.382] Server  LOG      ✓ Compiled in 22ms
+[00:04:32.484] Browser ERROR   ./components/order-form.tsx:231:1
+Parsing ecmascript source code failed
+  229 |     </form>
+  230 |   )
+> 231 | }
+      | ^
+  232 |
+  233 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  234 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:32.778] Browser ERROR   ./components/order-form.tsx:233:1
+Parsing ecmascript source code failed
+  231 |     </form>
+  232 |   )
+> 233 | }
+      | ^
+  234 |
+  235 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  236 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.008] Server  LOG      ✓ Compiled in 26ms
+[00:04:33.109] Browser ERROR   ./components/order-form.tsx:234:1
+Parsing ecmascript source code failed
+  232 |     </form>
+  233 |   )
+> 234 | }
+      | ^
+  235 |
+  236 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  237 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.109] Browser ERROR   ./components/order-form.tsx:236:5
+Parsing ecmascript source code failed
+  234 |             </Label>
+  235 |             <Textarea
+> 236 |     </form>
+      |     ^
+  237 |   )
+  238 | }
+  239 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.109] Browser ERROR   ./components/order-form.tsx:236:6
+Parsing ecmascript source code failed
+  234 |             </Label>
+  235 |             <Textarea
+> 236 |     </form>
+      |      ^^^^^^
+  237 |   )
+  238 | }
+  239 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.271] Browser ERROR   ./components/order-form.tsx:237:5
+Parsing ecmascript source code failed
+  235 |             <Textarea
+  236 |               id="catatan"
+> 237 |     </form>
+      |     ^
+  238 |   )
+  239 | }
+  240 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.271] Browser ERROR   ./components/order-form.tsx:237:6
+Parsing ecmascript source code failed
+  235 |             <Textarea
+  236 |               id="catatan"
+> 237 |     </form>
+      |      ^^^^^^
+  238 |   )
+  239 | }
+  240 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.365] Server  LOG      ✓ Compiled in 20ms
+[00:04:33.543] Browser ERROR   ./components/order-form.tsx:239:5
+Parsing ecmascript source code failed
+  237 |               value={catatan}
+  238 |               onChange={(e) => setCatatan(e.target.value)}
+> 239 |     </form>
+      |     ^
+  240 |   )
+  241 | }
+  242 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.543] Browser ERROR   ./components/order-form.tsx:239:6
+Parsing ecmascript source code failed
+  237 |               value={catatan}
+  238 |               onChange={(e) => setCatatan(e.target.value)}
+> 239 |     </form>
+      |      ^^^^^^
+  240 |   )
+  241 | }
+  242 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.543] Browser ERROR   ./components/order-form.tsx:241:5
+Parsing ecmascript source code failed
+  239 |               placeholder="Catatan tambahan"
+  240 |               rows={2}
+> 241 |     </form>
+      |     ^
+  242 |   )
+  243 | }
+  244 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.543] Browser ERROR   ./components/order-form.tsx:241:6
+Parsing ecmascript source code failed
+  239 |               placeholder="Catatan tambahan"
+  240 |               rows={2}
+> 241 |     </form>
+      |      ^^^^^^
+  242 |   )
+  243 | }
+  244 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.543] Browser ERROR   ./components/order-form.tsx:245:1
+Parsing ecmascript source code failed
+  243 |     </form>
+  244 |   )
+> 245 | }
+      | ^
+  246 |
+  247 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  248 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.543] Browser ERROR   ./components/order-form.tsx:247:1
+Parsing ecmascript source code failed
+  245 |     </form>
+  246 |   )
+> 247 | }
+      | ^
+  248 |
+  249 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  250 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.544] Server  LOG      ✓ Compiled in 18ms
+[00:04:33.587] Server  LOG      ✓ Compiled in 29ms
+[00:04:33.736] Server  LOG      ✓ Compiled in 20ms
+[00:04:33.846] Server  LOG      ✓ Compiled in 18ms
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:254:1
+Parsing ecmascript source code failed
+  252 |     </form>
+  253 |   )
+> 254 | }
+      | ^
+  255 |
+  256 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  257 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:254:1
+Parsing ecmascript source code failed
+  252 |     </form>
+  253 |   )
+> 254 | }
+      | ^
+  255 |
+  256 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  257 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:255:1
+Parsing ecmascript source code failed
+  253 |     </form>
+  254 |   )
+> 255 | }
+      | ^
+  256 |
+  257 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  258 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:254:5
+Parsing ecmascript source code failed
+  252 |         </div>
+  253 |         <Button
+> 254 |     </form>
+      |     ^
+  255 |   )
+  256 | }
+  257 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:254:6
+Parsing ecmascript source code failed
+  252 |         </div>
+  253 |         <Button
+> 254 |     </form>
+      |      ^^^^^^
+  255 |   )
+  256 | }
+  257 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:257:5
+Parsing ecmascript source code failed
+  255 |           disabled={totalItems === 0 || isSubmitting}
+  256 |           className="w-full bg-primary text-primary-foreground hover:opacity-90 h-12 text-lg font-semibold"
+> 257 |     </form>
+      |     ^
+  258 |   )
+  259 | }
+  260 |
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:257:6
+Parsing ecmascript source code failed
+  255 |           disabled={totalItems === 0 || isSubmitting}
+  256 |           className="w-full bg-primary text-primary-foreground hover:opacity-90 h-12 text-lg font-semibold"
+> 257 |     </form>
+      |      ^^^^^^
+  258 |   )
+  259 | }
+  260 |
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:33.947] Browser ERROR   ./components/order-form.tsx:261:1
+Parsing ecmascript source code failed
+  259 |     </form>
+  260 |   )
+> 261 | }
+      | ^
+  262 |
+  263 | export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps) {
+  264 |   const [namaLengkap, setNamaLengkap] = useState(order.nama_lengkap)
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:42.469] Server  LOG      ✓ Compiled in 21ms
+[00:04:42.573] Browser ERROR   ./components/order-form.tsx:128:3
+Parsing ecmascript source code failed
+  126 |       setIsSubmitting(false)
+  127 |     }
+> 128 |   }
+      |   ^
+  129 |
+  130 |   if (isSuccess) {
+  131 |     return (
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:04:42.616] Server  LOG      ✓ Compiled in 27ms
+[00:04:42.710] Server  LOG      ✓ Compiled in 22ms
+[00:04:42.752] Server  LOG      ✓ Compiled in 20ms
+[00:04:42.809] Server  LOG      ✓ Compiled in 18ms
+[00:04:42.862] Server  LOG      ✓ Compiled in 18ms
+[00:04:42.918] Server  LOG      ✓ Compiled in 18ms
+[00:04:42.973] Server  LOG      ✓ Compiled in 18ms
+[00:04:46.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:47.139] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:04:47.139] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:04:47.139] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348091947}
+[00:04:56.440] Browser ERROR   unhandledRejection: Error: Invalid supabaseUrl: Must be a valid HTTP or HTTPS URL.
+[00:05:13.848] Server  LOG        Reload env: .env.local
+[00:05:14.081] Server  LOG        Reload env: .env.local
+[00:05:14.287] Server  LOG        Reload env: .env.local
+[00:05:14.630] Server  LOG      ✓ Compiled in 724ms
+[00:05:14.721] Server  LOG        Reload env: .env.local
+[00:05:19.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:19.417] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:05:19.418] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:05:19.418] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348124226}
+[00:05:22.672] Browser LOG     Starting order submission...
+[00:05:22.672] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"gugun","noWhatsapp":"","sizes":{"L":0,"M":0,"S":1,"XL":0,"XXL":0,"XXXL":0},"totalItems":1}
+[00:05:22.672] Browser LOG     Checking existing orders for: gugun
+[00:05:25.842] Browser LOG     Check result: {"checkError":null,"existingOrders":[{"id":"89bfb5a3-5aa2-4d4b-81ea-04e89de04b85"}]}
+[00:05:29.288] Server  LOG      ✓ Compiled in 26ms
+[00:05:29.478] Server  LOG      ✓ Compiled in 94ms
+[00:05:29.599] Server  LOG      ✓ Compiled in 73ms
+[00:05:29.644] Server  LOG      ✓ Compiled in 34ms
+[00:05:29.681] Browser ERROR   ./components/order-form.tsx:324:3
+Parsing ecmascript source code failed
+  322 |   }
+  323 |
+> 324 |   return (
+      |   ^^^^^^^^
+> 325 |     <form onSubmit={handleSubmit} className="space-y-8">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 326 |       {/* Size Selection */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 327 |       <div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 328 |         <h3 className="text-lg font-semibold text-foreground mb-4">Pilih Ukuran & Jumlah</h3>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 329 |         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 330 |           {SIZES.map((size) => (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 331 |             <div
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 332 |               key={size}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 333 |               className="flex items-center justify-between bg-secondary border border-border rounded-lg p-3"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 334 |             >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 335 |               <span className="font-medium text-foreground">{size}</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 336 |               <div className="flex items-center gap-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 337 |                 <button
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 338 |                   type="button"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 339 |                   onClick={() => updateQuantity(size, -1)}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 340 |                   className="h-8 w-8 rounded-md bg-muted flex items-center justify-center text-foreground hover:bg-muted/80 transition-colors"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 341 |                 >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 342 |                   <Minus className="h-4 w-4" />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 343 |                 </button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 344 |                 <span className="w-8 text-center font-mono text-foreground">{sizes[size]}</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 345 |                 <button
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 346 |                   type="button"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 347 |                   onClick={() => updateQuantity(size, 1)}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 348 |                   className="h-8 w-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground hover:opacity-90 transition-opacity"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 349 |                 >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 350 |                   <Plus className="h-4 w-4" />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 351 |                 </button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 352 |               </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 353 |             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 354 |           ))}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 355 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 356 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 357 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 358 |       {/* Contact Information */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 359 |       <div className="space-y-4">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 360 |         <h3 className="text-lg font-semibold text-foreground">Informasi Pemesan</h3>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 361 |         <div className="grid gap-4">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 362 |           <div className="space-y-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 363 |             <Label htmlFor="nama" className="text-foreground">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 364 |               Nama Lengkap *
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 365 |             </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 366 |             <Input
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 367 |               id="nama"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 368 |               value={namaLengkap}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 369 |               onChange={(e) => setNamaLengkap(e.target.value)}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 370 |               placeholder="Masukkan nama lengkap"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 371 |               required
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 372 |               className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 373 |             />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 374 |           </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 375 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 376 |           <div className="space-y-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 377 |             <Label htmlFor="catatan" className="text-foreground">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 378 |               Catatan (Opsional)
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 379 |             </Label>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 380 |             <Textarea
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 381 |               id="catatan"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 382 |               value={catatan}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 383 |               onChange={(e) => setCatatan(e.target.value)}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 384 |               placeholder="Catatan tambahan"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 385 |               rows={2}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 386 |               className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 387 |             />
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 388 |           </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 389 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 390 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 391 |
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 392 |       {/* Submit */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 393 |       <div className="pt-4 border-t border-border">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 394 |         <div className="flex items-center justify-between mb-4">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 395 |           <span className="text-muted-foreground">Total Pesanan</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 396 |           <span className="text-xl font-bold text-primary">{totalItems} kaos</span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 397 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 398 |         <div className="flex gap-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 399 |           <Button
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 400 |             type="button"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 401 |             variant="outline"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 402 |             onClick={onCancel}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 403 |             className="flex-1"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 404 |           >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 405 |             Batal
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 406 |           </Button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 407 |           <Button
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 408 |             type="submit"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 409 |             disabled={totalItems === 0 || isSubmitting}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 410 |             className="flex-1 bg-primary text-primary-foreground hover:opacity-90 h-12 text-lg font-semibold"
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 411 |           >
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 412 |             {isSubmitting ? "Menyimpan..." : "Simpan Perubahan"}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 413 |           </Button>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 414 |         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 415 |       </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 416 |     </form>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 417 |   )
+      | ^^^^
+  418 | }
+  419 |
+
+Return statement is not allowed here
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:29.923] Server  LOG      ✓ Compiled in 54ms
+[00:05:30.100] Browser ERROR   ./components/order-form.tsx:424:2
+Parsing ecmascript source code failed
+  422 |     </form>
+  423 |   )
+> 424 | }
+      |  ^
+  425 |
+
+Expected ',', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:30.100] Browser ERROR   ./components/order-form.tsx:424:2
+Parsing ecmascript source code failed
+  422 |     </form>
+  423 |   )
+> 424 | }
+      |  ^
+  425 |
+
+Expected ',', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:30.100] Browser ERROR   ./components/order-form.tsx:427:2
+Parsing ecmascript source code failed
+  425 |     </form>
+  426 |   )
+> 427 | }
+      |  ^
+  428 |
+
+Expected ',', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:30.100] Browser ERROR   ./components/order-form.tsx:429:2
+Parsing ecmascript source code failed
+  427 |     </form>
+  428 |   )
+> 429 | }
+      |  ^
+  430 |
+
+Expected ',', got '<eof>'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:33.372] Browser LOG     Starting order submission...
+[00:05:33.372] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"ken","noWhatsapp":"","sizes":{"L":0,"M":0,"S":1,"XL":0,"XXL":0,"XXXL":0},"totalItems":1}
+[00:05:33.372] Browser LOG     Checking existing orders for: ken
+[00:05:33.725] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:05:33.725] Browser LOG     Inserting order...
+[00:05:33.725] Browser LOG     Order data to insert: {"alamat":null,"catatan":null,"nama_lengkap":"ken","no_whatsapp":null}
+[00:05:35.130] Browser LOG     Order insert result: {"order":null,"orderError":{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}}
+[00:05:35.130] Browser ERROR   Error submitting order: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}
+[00:05:35.130] Browser ERROR   Error type: object
+[00:05:35.130] Browser ERROR   Error message: Could not find the 'alamat' column of 'orders' in the schema cache
+[00:05:35.130] Browser ERROR   Error details: No details
+[00:05:35.130] Browser ERROR   Error hint: No hint
+[00:05:35.130] Browser ERROR   Error code: PGRST204
+[00:05:35.130] Browser ERROR   Full error object: {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'alamat' column of 'orders' in the schema cache"
+}
+[00:05:39.716] Server  LOG      ✓ Compiled in 30ms
+[00:05:40.175] Server  LOG      ✓ Compiled in 27ms
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:21:11
+Parsing ecmascript source code failed
+  19 | type Order = {
+  20 |
+> 21 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  22 |   order: Order
+  23 |   onCancel: () => void
+  24 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:22:11
+Parsing ecmascript source code failed
+  20 |   id: string
+  21 |
+> 22 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  23 |   order: Order
+  24 |   onCancel: () => void
+  25 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:25:11
+Parsing ecmascript source code failed
+  23 |   alamat: string | null
+  24 |
+> 25 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  26 |   order: Order
+  27 |   onCancel: () => void
+  28 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:27:11
+Parsing ecmascript source code failed
+  25 |   created_at: string
+  26 |
+> 27 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  28 |   order: Order
+  29 |   onCancel: () => void
+  30 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:29:11
+Parsing ecmascript source code failed
+  27 |     id: string
+  28 |
+> 29 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  30 |   order: Order
+  31 |   onCancel: () => void
+  32 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:30:11
+Parsing ecmascript source code failed
+  28 |     order_id: string
+  29 |
+> 30 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  31 |   order: Order
+  32 |   onCancel: () => void
+  33 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:32:11
+Parsing ecmascript source code failed
+  30 |     jumlah: number
+  31 |
+> 32 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  33 |   order: Order
+  34 |   onCancel: () => void
+  35 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:40.718] Browser ERROR   ./components/order-form.tsx:34:11
+Parsing ecmascript source code failed
+  32 |   }[]
+  33 |
+> 34 | interface EditOrderFormProps {
+     |           ^^^^^^^^^^^^^^^^^^
+  35 |   order: Order
+  36 |   onCancel: () => void
+  37 |   onSuccess: () => void
+
+Expected ';', got 'EditOrderFormProps'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:46.647] Browser LOG     Starting order submission...
+[00:05:46.647] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"ken","noWhatsapp":"","sizes":{"L":0,"M":0,"S":1,"XL":0,"XXL":0,"XXXL":0},"totalItems":1}
+[00:05:46.647] Browser LOG     Checking existing orders for: ken
+[00:05:47.006] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:05:47.006] Browser LOG     Inserting order...
+[00:05:47.006] Browser LOG     Order data to insert: {"alamat":null,"catatan":null,"nama_lengkap":"ken","no_whatsapp":null}
+[00:05:48.729] Browser LOG     Order insert result: {"order":null,"orderError":{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}}
+[00:05:48.729] Browser ERROR   Error submitting order: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}
+[00:05:48.729] Browser ERROR   Error type: object
+[00:05:48.729] Browser ERROR   Error message: Could not find the 'alamat' column of 'orders' in the schema cache
+[00:05:48.729] Browser ERROR   Error details: No details
+[00:05:48.729] Browser ERROR   Error hint: No hint
+[00:05:48.729] Browser ERROR   Error code: PGRST204
+[00:05:48.729] Browser ERROR   Full error object: {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'alamat' column of 'orders' in the schema cache"
+}
+[00:05:50.365] Server  LOG      ✓ Compiled in 27ms
+[00:05:50.447] Server  LOG      ✓ Compiled in 37ms
+[00:05:50.530] Server  LOG      ✓ Compiled in 28ms
+[00:05:50.606] Server  LOG      ✓ Compiled in 27ms
+[00:05:50.684] Server  LOG      ✓ Compiled in 23ms
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:407:1
+Parsing ecmascript source code failed
+  405 |     </form>
+  406 |   )
+> 407 | }
+      | ^
+  408 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:379:15
+Parsing ecmascript source code failed
+  377 |           <div className="space-y-2">
+  378 |             <Label htmlFor="nama" className="text-foreground">
+> 379 |         </div>
+      |               ^
+> 380 |       </div>
+      | ^^^^^^^
+  381 |
+  382 |       {/* Submit */}
+  383 |       <div className="pt-4 border-t border-border">
+
+Expected '</', got 'jsx text (
+      )'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:410:1
+Parsing ecmascript source code failed
+  408 |     </form>
+  409 |   )
+> 410 | }
+      | ^
+  411 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:382:9
+Parsing ecmascript source code failed
+  380 |             </Label>
+  381 |             <Input
+> 382 |         </div>
+      |         ^
+  383 |       </div>
+  384 |
+  385 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:382:10
+Parsing ecmascript source code failed
+  380 |             </Label>
+  381 |             <Input
+> 382 |         </div>
+      |          ^^^^^
+  383 |       </div>
+  384 |
+  385 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:384:9
+Parsing ecmascript source code failed
+  382 |               id="nama"
+  383 |               value={namaLengkap}
+> 384 |         </div>
+      |         ^
+  385 |       </div>
+  386 |
+  387 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:384:10
+Parsing ecmascript source code failed
+  382 |               id="nama"
+  383 |               value={namaLengkap}
+> 384 |         </div>
+      |          ^^^^^
+  385 |       </div>
+  386 |
+  387 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:385:9
+Parsing ecmascript source code failed
+  383 |               value={namaLengkap}
+  384 |               onChange={(e) => setNamaLengkap(e.target.value)}
+> 385 |         </div>
+      |         ^
+  386 |       </div>
+  387 |
+  388 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:385:10
+Parsing ecmascript source code failed
+  383 |               value={namaLengkap}
+  384 |               onChange={(e) => setNamaLengkap(e.target.value)}
+> 385 |         </div>
+      |          ^^^^^
+  386 |       </div>
+  387 |
+  388 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:387:9
+Parsing ecmascript source code failed
+  385 |               placeholder="Masukkan nama lengkap"
+  386 |               required
+> 387 |         </div>
+      |         ^
+  388 |       </div>
+  389 |
+  390 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:387:10
+Parsing ecmascript source code failed
+  385 |               placeholder="Masukkan nama lengkap"
+  386 |               required
+> 387 |         </div>
+      |          ^^^^^
+  388 |       </div>
+  389 |
+  390 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:388:9
+Parsing ecmascript source code failed
+  386 |               required
+  387 |               className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+> 388 |         </div>
+      |         ^
+  389 |       </div>
+  390 |
+  391 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.060] Browser ERROR   ./components/order-form.tsx:388:10
+Parsing ecmascript source code failed
+  386 |               required
+  387 |               className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+> 388 |         </div>
+      |          ^^^^^
+  389 |       </div>
+  390 |
+  391 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.108] Server  LOG      ✓ Compiled in 51ms
+[00:05:51.158] Server  LOG      ✓ Compiled in 26ms
+[00:05:51.294] Server  LOG      ✓ Compiled in 28ms
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:421:1
+Parsing ecmascript source code failed
+  419 |     </form>
+  420 |   )
+> 421 | }
+      | ^
+  422 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:393:15
+Parsing ecmascript source code failed
+  391 |           <div className="space-y-2">
+  392 |             <Label htmlFor="noWhatsapp" className="text-foreground">
+> 393 |         </div>
+      |               ^
+> 394 |       </div>
+      | ^^^^^^^
+  395 |
+  396 |       {/* Submit */}
+  397 |       <div className="pt-4 border-t border-border">
+
+Expected '</', got 'jsx text (
+      )'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:394:15
+Parsing ecmascript source code failed
+  392 |             <Label htmlFor="noWhatsapp" className="text-foreground">
+  393 |               No. WhatsApp (Opsional)
+> 394 |         </div>
+      |               ^
+> 395 |       </div>
+      | ^^^^^^^
+  396 |
+  397 |       {/* Submit */}
+  398 |       <div className="pt-4 border-t border-border">
+
+Expected '</', got 'jsx text (
+      )'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:396:9
+Parsing ecmascript source code failed
+  394 |             </Label>
+  395 |             <Input
+> 396 |         </div>
+      |         ^
+  397 |       </div>
+  398 |
+  399 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:396:10
+Parsing ecmascript source code failed
+  394 |             </Label>
+  395 |             <Input
+> 396 |         </div>
+      |          ^^^^^
+  397 |       </div>
+  398 |
+  399 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:398:9
+Parsing ecmascript source code failed
+  396 |               id="noWhatsapp"
+  397 |               value={noWhatsapp}
+> 398 |         </div>
+      |         ^
+  399 |       </div>
+  400 |
+  401 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:398:10
+Parsing ecmascript source code failed
+  396 |               id="noWhatsapp"
+  397 |               value={noWhatsapp}
+> 398 |         </div>
+      |          ^^^^^
+  399 |       </div>
+  400 |
+  401 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:400:9
+Parsing ecmascript source code failed
+  398 |               onChange={(e) => setNoWhatsapp(e.target.value)}
+  399 |               placeholder="Masukkan nomor WhatsApp"
+> 400 |         </div>
+      |         ^
+  401 |       </div>
+  402 |
+  403 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.576] Browser ERROR   ./components/order-form.tsx:400:10
+Parsing ecmascript source code failed
+  398 |               onChange={(e) => setNoWhatsapp(e.target.value)}
+  399 |               placeholder="Masukkan nomor WhatsApp"
+> 400 |         </div>
+      |          ^^^^^
+  401 |       </div>
+  402 |
+  403 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:51.579] Server  LOG      ✓ Compiled in 52ms
+[00:05:51.650] Server  LOG      ✓ Compiled in 51ms
+[00:05:51.781] Server  LOG      ✓ Compiled in 17ms
+[00:05:51.872] Server  LOG      ✓ Compiled in 32ms
+[00:05:51.934] Server  LOG      ✓ Compiled in 39ms
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:437:1
+Parsing ecmascript source code failed
+  435 |     </form>
+  436 |   )
+> 437 | }
+      | ^
+  438 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:413:9
+Parsing ecmascript source code failed
+  411 |               onChange={(e) => setAlamat(e.target.value)}
+  412 |               placeholder="Masukkan alamat lengkap"
+> 413 |         </div>
+      |         ^
+  414 |       </div>
+  415 |
+  416 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:413:10
+Parsing ecmascript source code failed
+  411 |               onChange={(e) => setAlamat(e.target.value)}
+  412 |               placeholder="Masukkan alamat lengkap"
+> 413 |         </div>
+      |          ^^^^^
+  414 |       </div>
+  415 |
+  416 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:415:9
+Parsing ecmascript source code failed
+  413 |               rows={2}
+  414 |               className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none"
+> 415 |         </div>
+      |         ^
+  416 |       </div>
+  417 |
+  418 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:415:10
+Parsing ecmascript source code failed
+  413 |               rows={2}
+  414 |               className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none"
+> 415 |         </div>
+      |          ^^^^^
+  416 |       </div>
+  417 |
+  418 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:445:1
+Parsing ecmascript source code failed
+  443 |     </form>
+  444 |   )
+> 445 | }
+      | ^
+  446 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:421:15
+Parsing ecmascript source code failed
+  419 |             <Label htmlFor="catatan" className="text-foreground">
+  420 |               Catatan (Opsional)
+> 421 |         </div>
+      |               ^
+> 422 |       </div>
+      | ^^^^^^^
+  423 |
+  424 |       {/* Submit */}
+  425 |       <div className="pt-4 border-t border-border">
+
+Expected '</', got 'jsx text (
+      )'
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:424:9
+Parsing ecmascript source code failed
+  422 |             <Textarea
+  423 |               id="catatan"
+> 424 |         </div>
+      |         ^
+  425 |       </div>
+  426 |
+  427 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:424:10
+Parsing ecmascript source code failed
+  422 |             <Textarea
+  423 |               id="catatan"
+> 424 |         </div>
+      |          ^^^^^
+  425 |       </div>
+  426 |
+  427 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:428:9
+Parsing ecmascript source code failed
+  426 |               placeholder="Catatan tambahan"
+  427 |               rows={2}
+> 428 |         </div>
+      |         ^
+  429 |       </div>
+  430 |
+  431 |       {/* Submit */}
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:52.122] Browser ERROR   ./components/order-form.tsx:428:10
+Parsing ecmascript source code failed
+  426 |               placeholder="Catatan tambahan"
+  427 |               rows={2}
+> 428 |         </div>
+      |          ^^^^^
+  429 |       </div>
+  430 |
+  431 |       {/* Submit */}
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:05:53.428] Browser LOG     Starting order submission...
+[00:05:53.428] Browser LOG     Form data: {"alamat":"","catatan":"","namaLengkap":"ken","noWhatsapp":"","sizes":{"L":0,"M":0,"S":1,"XL":0,"XXL":0,"XXXL":0},"totalItems":1}
+[00:05:53.428] Browser LOG     Checking existing orders for: ken
+[00:05:53.755] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:05:53.755] Browser LOG     Inserting order...
+[00:05:53.755] Browser LOG     Order data to insert: {"alamat":null,"catatan":null,"nama_lengkap":"ken","no_whatsapp":null}
+[00:05:54.926] Browser LOG     Order insert result: {"order":null,"orderError":{"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}}
+[00:05:54.926] Browser ERROR   Error submitting order: {"code":"PGRST204","details":null,"hint":null,"message":"Could not find the 'alamat' column of 'orders' in the schema cache"}
+[00:05:54.926] Browser ERROR   Error type: object
+[00:05:54.926] Browser ERROR   Error message: Could not find the 'alamat' column of 'orders' in the schema cache
+[00:05:54.926] Browser ERROR   Error details: No details
+[00:05:54.926] Browser ERROR   Error hint: No hint
+[00:05:54.926] Browser ERROR   Error code: PGRST204
+[00:05:54.926] Browser ERROR   Full error object: {
+  "code": "PGRST204",
+  "details": null,
+  "hint": null,
+  "message": "Could not find the 'alamat' column of 'orders' in the schema cache"
+}
+[00:06:02.933] Server  LOG      ✓ Compiled in 24ms
+[00:06:03.218] Server  LOG      ✓ Compiled in 23ms
+[00:06:03.265] Server  LOG      ✓ Compiled in 24ms
+[00:06:03.363] Server  LOG      ✓ Compiled in 25ms
+[00:06:03.438] Server  LOG      ✓ Compiled in 25ms
+[00:06:03.507] Server  LOG      ✓ Compiled in 24ms
+[00:06:03.714] Browser ERROR   ./components/order-form.tsx:333:3
+Parsing ecmascript source code failed
+  331 |       setIsSubmitting(false)
+  332 |     }
+> 333 |   }
+      |   ^
+  334 |
+  335 |   return (
+  336 |     <form onSubmit={handleSubmit} className="space-y-8">
+
+Expected a semicolon
+
+Import trace:
+  Server Component:
+    ./components/order-form.tsx
+    ./app/page.tsx
+[00:09:45.138] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:45.304] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:45.304] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:09:45.304] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348390112}
+[00:09:55.773] Browser LOG     Starting order submission...
+[00:09:55.773] Browser LOG     Form data: {"alamat":"a","catatan":"a","namaLengkap":"ken","noWhatsapp":"a","sizes":{"L":0,"M":0,"S":1,"XL":0,"XXL":0,"XXXL":0},"totalItems":1}
+[00:09:55.773] Browser LOG     Checking existing orders for: ken
+[00:09:56.924] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:09:56.924] Browser LOG     Inserting order...
+[00:09:56.924] Browser LOG     Order data to insert: {"alamat":"a","catatan":"a","nama_lengkap":"ken","no_whatsapp":"a"}
+[00:09:57.253] Browser LOG     Order insert result: {"order":{"alamat":"a","catatan":"a","created_at":"2025-11-28T16:46:41.899089+00:00","id":"3af61369-f186-4965-97b2-3137443d1be1","nama_lengkap":"ken","no_whatsapp":"a"},"orderError":null}
+[00:09:57.254] Browser LOG     Order items to insert: [{"jumlah":1,"order_id":"3af61369-f186-4965-97b2-3137443d1be1","ukuran":"S"}]
+[00:09:57.674] Browser LOG     Order items insert result: {"itemsError":null}
+[00:09:57.674] Browser LOG     Order submission successful!
+[00:10:01.379] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/pesanan color: rgb(120, 120, 120) color: inherit {"dp":"/pesanan","o":"http://localhost:3000/pesanan","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348406185}
+[00:10:05.941] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:06.078] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:10:06.078] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/pesanan","route":"/pesanan"}
+[00:10:06.078] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/pesanan color: rgb(120, 120, 120) color: inherit {"dp":"/pesanan","o":"http://localhost:3000/pesanan","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348410886}
+[00:10:10.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348414874}
+[00:10:11.470] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/pesanan color: rgb(120, 120, 120) color: inherit {"dp":"/pesanan","o":"http://localhost:3000/pesanan","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348416277}
+[00:10:14.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348418894}
+[00:10:27.953] Browser LOG     Starting order submission...
+[00:10:27.953] Browser LOG     Form data: {"alamat":"w","catatan":"w","namaLengkap":"gugun","noWhatsapp":"a","sizes":{"L":0,"M":0,"S":0,"XL":0,"XXL":0,"XXXL":1},"totalItems":1}
+[00:10:27.953] Browser LOG     Checking existing orders for: gugun
+[00:10:28.284] Browser LOG     Check result: {"checkError":null,"existingOrders":[]}
+[00:10:28.284] Browser LOG     Inserting order...
+[00:10:28.284] Browser LOG     Order data to insert: {"alamat":"w","catatan":"w","nama_lengkap":"gugun","no_whatsapp":"a"}
+[00:10:28.608] Browser LOG     Order insert result: {"order":{"alamat":"w","catatan":"w","created_at":"2025-11-28T16:47:13.25598+00:00","id":"f2d622c4-8076-4405-a4f0-7cdc58f1ee4d","nama_lengkap":"gugun","no_whatsapp":"a"},"orderError":null}
+[00:10:28.608] Browser LOG     Order items to insert: [{"jumlah":1,"order_id":"f2d622c4-8076-4405-a4f0-7cdc58f1ee4d","ukuran":"XXXL"}]
+[00:10:28.925] Browser LOG     Order items insert result: {"itemsError":null}
+[00:10:28.925] Browser LOG     Order submission successful!
+[00:10:31.860] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/pesanan color: rgb(120, 120, 120) color: inherit {"dp":"/pesanan","o":"http://localhost:3000/pesanan","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348436666}
+[00:11:15.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:15.799] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:15.799] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/pesanan","route":"/pesanan"}
+[00:11:15.799] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/pesanan color: rgb(120, 120, 120) color: inherit {"dp":"/pesanan","o":"http://localhost:3000/pesanan","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348480607}
+[00:11:25.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:25.499] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:25.499] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/pesanan","route":"/pesanan"}
+[00:11:25.499] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/pesanan color: rgb(120, 120, 120) color: inherit {"dp":"/pesanan","o":"http://localhost:3000/pesanan","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764348490307}
