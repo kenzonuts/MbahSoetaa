@@ -1,5 +1,5 @@
-import { OrderForm } from "@/components/order-form"
 import { TshirtShowcase } from "@/components/tshirt-showcase"
+import { OrderForm } from "@/components/order-form"
 import Link from "next/link"
 import { ClipboardList } from "lucide-react"
 
@@ -18,9 +18,9 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           {/* Header */}
-          <header className="text-center mb-12">
+          <header className="text-center mb-8 sm:mb-12">
             <div className="flex justify-end mb-4">
               <Link
                 href="/pesanan"
@@ -30,29 +30,29 @@ export default function Home() {
                 Lihat Daftar Pesanan
               </Link>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground tracking-tight text-balance">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground tracking-tight text-balance">
               MBAH SOETA
             </h1>
-            <p className="text-xl sm:text-2xl text-primary font-semibold mt-2">FAMILY</p>
-            <p className="text-muted-foreground mt-4 text-lg italic">Kumpul Sebentar, Bahagianya Lama.</p>
+            <p className="text-lg sm:text-xl md:text-2xl text-primary font-semibold mt-2">FAMILY</p>
+            <p className="text-muted-foreground mt-4 text-base sm:text-lg italic px-4">Kumpul Sebentar, Bahagianya Lama.</p>
           </header>
 
           {/* Main Content */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left: T-shirt Showcase */}
-            <div className="lg:sticky lg:top-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* T-shirt Showcase */}
+            <div className="lg:sticky lg:top-8 order-1">
               <TshirtShowcase />
-              <div className="mt-8 text-center">
+              <div className="mt-6 lg:mt-8 text-center">
                 <p className="text-muted-foreground text-sm">Kaos keluarga dengan desain eksklusif</p>
                 <p className="text-muted-foreground text-sm">Bahan cotton combed 30s premium</p>
               </div>
             </div>
 
-            {/* Right: Order Form */}
-            <div className="bg-card border border-border rounded-2xl p-6 sm:p-8">
-              <div className="mb-6">
-                <h2 className="text-2xl font-bold text-foreground">Form Pemesanan</h2>
-                <p className="text-muted-foreground mt-1">Isi form di bawah untuk memesan kaos keluarga</p>
+            {/* Order Form */}
+            <div className="bg-card border border-border rounded-2xl p-4 sm:p-6 lg:p-8 order-2">
+              <div className="mb-4 sm:mb-6">
+                <h2 className="text-xl sm:text-2xl font-bold text-foreground">Form Pemesanan</h2>
+                <p className="text-muted-foreground mt-1 text-sm sm:text-base">Isi form di bawah untuk memesan kaos keluarga</p>
               </div>
               <OrderForm />
             </div>

@@ -147,17 +147,17 @@ export function OrdersList({ orders, error }: OrdersListProps) {
       {/* Size Summary */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg flex items-center gap-2">
-            <Package className="w-5 h-5" />
+          <CardTitle className="text-base sm:text-lg flex items-center gap-2">
+            <Package className="w-4 h-4 sm:w-5 sm:h-5" />
             Rekap per Ukuran
           </CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-wrap gap-3">
+          <div className="grid grid-cols-3 sm:flex sm:flex-wrap gap-2 sm:gap-3">
             {SIZES.map((size) => (
-              <div key={size} className="flex items-center gap-2 bg-muted px-4 py-2 rounded-lg">
-                <span className="font-semibold text-foreground">{size}</span>
-                <Badge variant="secondary" className="bg-primary/20 text-primary">
+              <div key={size} className="flex items-center justify-center sm:justify-start gap-1 sm:gap-2 bg-muted px-2 sm:px-4 py-2 rounded-lg">
+                <span className="font-semibold text-foreground text-sm sm:text-base">{size}</span>
+                <Badge variant="secondary" className="bg-primary/20 text-primary text-xs">
                   {summary.sizeCounts[size] || 0}
                 </Badge>
               </div>
@@ -258,7 +258,7 @@ export function OrdersList({ orders, error }: OrdersListProps) {
                   <div className="flex flex-wrap gap-2">
                     {order.order_items.map((item) => (
                       <Badge key={item.id} variant="outline" className="text-base px-3 py-1">
-                        {item.ukuran} x {item.jumlah}
+                        {item.ukuran} ({item.sleeve_type}) x {item.jumlah}
                       </Badge>
                     ))}
                   </div>

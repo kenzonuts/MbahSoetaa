@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS order_items (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   order_id UUID REFERENCES orders(id) ON DELETE CASCADE,
   ukuran TEXT NOT NULL,
+  sleeve_type TEXT NOT NULL DEFAULT 'pendek',
   jumlah INTEGER NOT NULL DEFAULT 1,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );

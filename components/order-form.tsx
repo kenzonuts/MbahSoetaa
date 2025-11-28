@@ -3,14 +3,20 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { getSupabaseBrowserClient } from "@/lib/supabase/client"
-import { Minus, Plus, CheckCircle2 } from "lucide-react"
+import { Minus, Plus, CheckCircle2, ShoppingCart } from "lucide-react"
 
 const SIZES = ["S", "M", "L", "XL", "XXL", "XXXL"]
+const SLEEVE_TYPES = [
+  { value: "pendek", label: "Lengan Pendek" },
+  { value: "panjang", label: "Lengan Panjang" },
+  { value: "custom", label: "Custom" }
+]
 
 interface SizeQuantity {
   [key: string]: number
@@ -27,6 +33,7 @@ type Order = {
     id: string
     order_id: string
     ukuran: string
+    sleeve_type?: string
     jumlah: number
     created_at: string
   }[]
@@ -44,6 +51,8 @@ export function OrderForm() {
   const [alamat, setAlamat] = useState("")
   const [catatan, setCatatan] = useState("")
   const [sizes, setSizes] = useState<SizeQuantity>(SIZES.reduce((acc, size) => ({ ...acc, [size]: 0 }), {}))
+  const [selectedSleeveType, setSelectedSleeveType] = useState("pendek")
+  const [customSleeveText, setCustomSleeveText] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
 
@@ -112,6 +121,7 @@ export function OrderForm() {
         .map(([ukuran, jumlah]) => ({
           order_id: order.id,
           ukuran,
+          sleeve_type: selectedSleeveType === "custom" ? customSleeveText : selectedSleeveType,
           jumlah,
         }))
 
@@ -139,20 +149,69 @@ export function OrderForm() {
     }
   }
 
+  const resetForm = () => {
+    setNamaLengkap("")
+    setNoWhatsapp("")
+    setAlamat("")
+    setCatatan("")
+    setSizes(SIZES.reduce((acc, size) => ({ ...acc, [size]: 0 }), {}))
+    setSelectedSleeveType("pendek")
+    setCustomSleeveText("")
+    setIsSuccess(false)
+  }
+
   if (isSuccess) {
     return (
       <div className="flex flex-col items-center justify-center py-12 text-center">
         <CheckCircle2 className="h-16 w-16 text-primary mb-4" />
         <h3 className="text-2xl font-bold text-foreground mb-2">Pesanan Berhasil!</h3>
-        <p className="text-muted-foreground max-w-md">
+        <p className="text-muted-foreground max-w-md mb-6">
           Terima kasih telah memesan kaos keluarga MBAH SOETA. Pesanan Anda telah berhasil dikirim.
         </p>
+        <Button
+          onClick={resetForm}
+          className="inline-flex items-center gap-2 bg-primary text-primary-foreground hover:opacity-90 px-6 py-3 rounded-lg text-base font-semibold transition-all duration-200"
+        >
+          <ShoppingCart className="w-4 h-4" />
+          Pesan Lagi
+        </Button>
       </div>
     )
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
+      {/* Sleeve Type Selection */}
+      <div>
+        <h3 className="text-lg font-semibold text-foreground mb-4">Pilih Jenis Lengan</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {SLEEVE_TYPES.map((sleeve) => (
+            <button
+              key={sleeve.value}
+              type="button"
+              onClick={() => setSelectedSleeveType(sleeve.value)}
+              className={`p-4 border border-border rounded-lg text-left transition-colors ${
+                selectedSleeveType === sleeve.value
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-secondary text-foreground hover:bg-secondary/80"
+              }`}
+            >
+              <div className="font-medium">{sleeve.label}</div>
+            </button>
+          ))}
+        </div>
+        {selectedSleeveType === "custom" && (
+          <div className="mt-4">
+            <Input
+              value={customSleeveText}
+              onChange={(e) => setCustomSleeveText(e.target.value)}
+              placeholder="Masukkan jenis lengan custom"
+              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+            />
+          </div>
+        )}
+      </div>
+
       {/* Size Selection */}
       <div>
         <h3 className="text-lg font-semibold text-foreground mb-4">Pilih Ukuran & Jumlah</h3>
@@ -276,6 +335,14 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
     })
     return initialSizes
   })
+  const [selectedSleeveType, setSelectedSleeveType] = useState(() => {
+    // Get the sleeve type from the first order item, assuming all items have the same sleeve type
+    return order.order_items.length > 0 ? order.order_items[0].sleeve_type : "pendek"
+  })
+  const [customSleeveText, setCustomSleeveText] = useState(() => {
+    const sleeveType = order.order_items.length > 0 ? order.order_items[0].sleeve_type || "pendek" : "pendek"
+    return ["pendek", "panjang", "custom"].includes(sleeveType) ? "" : sleeveType
+  })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const updateQuantity = (size: string, delta: number) => {
@@ -300,6 +367,8 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
         .from("orders")
         .update({
           nama_lengkap: namaLengkap,
+          no_whatsapp: noWhatsapp || null,
+          alamat: alamat || null,
           catatan: catatan || null,
         })
         .eq("id", order.id)
@@ -320,6 +389,7 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
         .map(([ukuran, jumlah]) => ({
           order_id: order.id,
           ukuran,
+          sleeve_type: selectedSleeveType === "custom" ? customSleeveText : selectedSleeveType,
           jumlah,
         }))
 
@@ -343,32 +413,63 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-8">
+    <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
+      {/* Sleeve Type Selection */}
+      <div>
+        <h3 className="text-base sm:text-lg font-semibold text-foreground mb-3 sm:mb-4">Pilih Jenis Lengan</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
+          {SLEEVE_TYPES.map((sleeve) => (
+            <button
+              key={sleeve.value}
+              type="button"
+              onClick={() => setSelectedSleeveType(sleeve.value)}
+              className={`p-3 sm:p-4 border border-border rounded-lg text-left transition-colors min-h-[44px] touch-manipulation ${
+                selectedSleeveType === sleeve.value
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-secondary text-foreground hover:bg-secondary/80"
+              }`}
+            >
+              <div className="font-medium text-sm sm:text-base">{sleeve.label}</div>
+            </button>
+          ))}
+        </div>
+        {selectedSleeveType === "custom" && (
+          <div className="mt-3">
+            <Input
+              value={customSleeveText}
+              onChange={(e) => setCustomSleeveText(e.target.value)}
+              placeholder="Masukkan jenis lengan custom"
+              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+            />
+          </div>
+        )}
+      </div>
+
       {/* Size Selection */}
       <div>
-        <h3 className="text-lg font-semibold text-foreground mb-4">Pilih Ukuran & Jumlah</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <h3 className="text-base sm:text-lg font-semibold text-foreground mb-3 sm:mb-4">Pilih Ukuran & Jumlah</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
           {SIZES.map((size) => (
             <div
               key={size}
-              className="flex items-center justify-between bg-secondary border border-border rounded-lg p-3"
+              className="flex items-center justify-between bg-secondary border border-border rounded-lg p-2 sm:p-3"
             >
-              <span className="font-medium text-foreground">{size}</span>
-              <div className="flex items-center gap-2">
+              <span className="font-medium text-foreground text-sm sm:text-base">{size}</span>
+              <div className="flex items-center gap-1 sm:gap-2">
                 <button
                   type="button"
                   onClick={() => updateQuantity(size, -1)}
-                  className="h-8 w-8 rounded-md bg-muted flex items-center justify-center text-foreground hover:bg-muted/80 transition-colors"
+                  className="h-8 w-8 sm:h-9 sm:w-9 rounded-md bg-muted flex items-center justify-center text-foreground hover:bg-muted/80 transition-colors touch-manipulation"
                 >
-                  <Minus className="h-4 w-4" />
+                  <Minus className="h-3 w-3 sm:h-4 sm:w-4" />
                 </button>
-                <span className="w-8 text-center font-mono text-foreground">{sizes[size]}</span>
+                <span className="w-6 sm:w-8 text-center font-mono text-foreground text-sm sm:text-base">{sizes[size]}</span>
                 <button
                   type="button"
                   onClick={() => updateQuantity(size, 1)}
-                  className="h-8 w-8 rounded-md bg-primary flex items-center justify-center text-primary-foreground hover:opacity-90 transition-opacity"
+                  className="h-8 w-8 sm:h-9 sm:w-9 rounded-md bg-primary flex items-center justify-center text-primary-foreground hover:opacity-90 transition-opacity touch-manipulation"
                 >
-                  <Plus className="h-4 w-4" />
+                  <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
                 </button>
               </div>
             </div>
@@ -378,10 +479,10 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
 
       {/* Contact Information */}
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold text-foreground">Informasi Pemesan</h3>
-        <div className="grid gap-4">
+        <h3 className="text-base sm:text-lg font-semibold text-foreground">Informasi Pemesan</h3>
+        <div className="grid gap-3 sm:gap-4">
           <div className="space-y-2">
-            <Label htmlFor="nama" className="text-foreground">
+            <Label htmlFor="nama" className="text-foreground text-sm sm:text-base">
               Nama Lengkap *
             </Label>
             <Input
@@ -390,12 +491,12 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
               onChange={(e) => setNamaLengkap(e.target.value)}
               placeholder="Masukkan nama lengkap"
               required
-              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground h-10 sm:h-11 text-sm sm:text-base"
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="noWhatsapp" className="text-foreground">
+            <Label htmlFor="noWhatsapp" className="text-foreground text-sm sm:text-base">
               No. WhatsApp (Opsional)
             </Label>
             <Input
@@ -403,12 +504,13 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
               value={noWhatsapp}
               onChange={(e) => setNoWhatsapp(e.target.value)}
               placeholder="Masukkan nomor WhatsApp"
-              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground"
+              type="tel"
+              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground h-10 sm:h-11 text-sm sm:text-base"
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="alamat" className="text-foreground">
+            <Label htmlFor="alamat" className="text-foreground text-sm sm:text-base">
               Alamat (Opsional)
             </Label>
             <Textarea
@@ -417,12 +519,12 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
               onChange={(e) => setAlamat(e.target.value)}
               placeholder="Masukkan alamat lengkap"
               rows={2}
-              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none"
+              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none text-sm sm:text-base"
             />
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="catatan" className="text-foreground">
+            <Label htmlFor="catatan" className="text-foreground text-sm sm:text-base">
               Catatan (Opsional)
             </Label>
             <Textarea
@@ -431,7 +533,7 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
               onChange={(e) => setCatatan(e.target.value)}
               placeholder="Catatan tambahan"
               rows={2}
-              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none"
+              className="bg-secondary border-border text-foreground placeholder:text-muted-foreground resize-none text-sm sm:text-base"
             />
           </div>
         </div>
@@ -440,22 +542,22 @@ export function EditOrderForm({ order, onCancel, onSuccess }: EditOrderFormProps
       {/* Submit */}
       <div className="pt-4 border-t border-border">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-muted-foreground">Total Pesanan</span>
-          <span className="text-xl font-bold text-primary">{totalItems} kaos</span>
+          <span className="text-muted-foreground text-sm sm:text-base">Total Pesanan</span>
+          <span className="text-lg sm:text-xl font-bold text-primary">{totalItems} kaos</span>
         </div>
         <div className="flex gap-2">
           <Button
             type="button"
             variant="outline"
             onClick={onCancel}
-            className="flex-1"
+            className="flex-1 h-11 sm:h-12 text-sm sm:text-base touch-manipulation"
           >
             Batal
           </Button>
           <Button
             type="submit"
             disabled={totalItems === 0 || isSubmitting}
-            className="flex-1 bg-primary text-primary-foreground hover:opacity-90 h-12 text-lg font-semibold"
+            className="flex-1 bg-primary text-primary-foreground hover:opacity-90 h-11 sm:h-12 text-sm sm:text-base font-semibold touch-manipulation"
           >
             {isSubmitting ? "Menyimpan..." : "Simpan Perubahan"}
           </Button>
