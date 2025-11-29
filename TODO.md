@@ -1,27 +1,30 @@
-# TODO: Make Website Responsive for Mobile Phones
+# TODO: Fix Vercel Deployment UI Issues
 
 ## Information Gathered
-- Website built with Next.js and Tailwind CSS
-- Main page has hero section with grid layout (lg:grid-cols-2)
-- Order form has complex grids for sleeve and size selection
-- Orders list page has summary cards and order management
-- Layout includes responsive viewport meta tag
-- Uses Tailwind with custom properties
+- Project uses Next.js with Tailwind CSS v4
+- Tailwind config is in `app/globals.css` and `postcss.config.mjs`
+- No traditional `tailwind.config.js` file
+- `vercel.json` has basic Next.js build config
+- `next.config.mjs` has TypeScript ignore and unoptimized images
 
 ## Plan
-- [ ] Update app/page.tsx for better mobile layout
-- [ ] Update components/order-form.tsx for mobile-friendly grids and touch targets
-- [ ] Update components/orders-list.tsx for better mobile stacking
-- [ ] Update components/tshirt-showcase.tsx for proper image scaling
-- [ ] Test responsiveness on different screen sizes
+1. Create `tailwind.config.js` for Vercel compatibility
+2. Update `vercel.json` for proper static asset handling
+3. Adjust `next.config.mjs` if needed for build optimization
 
-## Dependent Files to Edit
-- app/page.tsx
-- components/order-form.tsx
-- components/orders-list.tsx
-- components/tshirt-showcase.tsx
+## Dependent Files to be edited
+- `tailwind.config.js` (new file)
+- `vercel.json`
+- `next.config.mjs` (if needed)
 
-## Followup Steps
-- Test changes on mobile devices
-- Ensure touch targets are at least 44px
-- Verify all interactive elements work on touch
+## Followup steps
+- Test build locally
+- Deploy to Vercel and verify UI readability
+- If issues persist, consider downgrading to Tailwind v3
+
+## Steps to Complete
+- [x] Create tailwind.config.js
+- [x] Update vercel.json
+- [x] Adjust next.config.mjs if needed
+- [ ] Test local build
+- [ ] Deploy and verify
